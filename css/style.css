@@ -1,1 +1,34 @@
 @import url(full.css);
+/*-------------------------------------------------------------------------------------------------*/
+.deeper {
+  padding: 1rem 0;
+  background-color: #F0EFEB;
+}
+
+.deeper__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.deeper__body {
+  max-width: 605px;
+}
+.deeper__body h1 {
+  font-weight: 700;
+  font-size: 3.75rem;
+}
+.deeper__body p {
+  font-size: 1.5rem;
+}
+
+.deeper__image {
+  position: relative;
+  left: 110px;
+}

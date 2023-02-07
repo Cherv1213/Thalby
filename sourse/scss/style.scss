@@ -1,4 +1,36 @@
 @import url(full.css);
-
+$fz-36:36px;
+$clr-sec:#F0EFEB;
+/*-------------------------------------------------------------------------------------------------*/
+.deeper {
+   padding: 1rem 0;
+   background-color: $clr-sec;
+}
+.deeper__container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   
+}
+.deeper__body {
+   max-width: 605px;
+   & h1{
+      font-weight: 700;
+      font-size: 3.75rem;
+   }
+   & p{
+      font-size: 1.5rem;
+   }  
+}
+.button {
+}
+.deeper__image {
+   position: relative;
+   left: 110px;
+ 
+   & img{
+     
+   }
+}
 
 
