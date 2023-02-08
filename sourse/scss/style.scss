@@ -225,3 +225,114 @@ $clr-sec:#F0EFEB;
 .someof__item:nth-child(6) span{
    background-color: #ff0000;
 }
+
+/*-------------------------------------------------------------------------------------------------*/
+.interviews {
+   padding: 50px 0;
+
+& .title {
+   max-width: 700px;
+   margin: auto;
+   margin-bottom: 17.8125rem;
+   text-align: center;
+}
+}
+.interviews__body {
+   background-color: #F0F0F0;
+   padding-bottom: 50px;
+ 
+}
+.interviews__container {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 1rem;
+   row-gap: 230px;
+
+   @media (max-width: 900px){
+      justify-content: center;
+   }
+}
+.blockquote {
+   margin-top: -185px;
+   text-align: center;
+   max-width: 280px;
+   font-weight: 700;
+   
+   & img{
+      margin-bottom: 2.25rem;
+      max-width: 100%;
+   }
+   & a{
+      color: inherit;
+      text-decoration: underline;
+   }
+}
+.blockquote__text{
+   font-size: 1.375rem;
+   margin-bottom: 40px;
+}
+.blockquote__name {
+   font-weight: 400;
+   font-size: 19px;
+   margin-bottom: 2.75rem;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+.keepin {
+   padding: 70px 0;
+}
+.keepin__container {
+}
+.keepin__form {
+   text-align: center;
+
+   & .title{
+      margin-bottom: 10px;
+   }
+   & p{
+      font-weight: 700;
+   font-size: 17px;
+   margin-bottom: 1.625rem;
+   }
+}
+.keepin__info {
+   max-width: 400px;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+}
+.form__name{
+   display: flex;
+   gap:clamp(1rem,5vw,3.75rem);
+   margin-bottom: 1.125rem;
+}
+.form-group {
+   position: relative;
+   border: 1px solid #000;
+}
+.form-input{
+   padding: 12px 8px;
+   width: 100%;
+   font-size: 1rem;
+   
+}
+.form-label{
+   position: absolute;
+   top: 50%;
+   left: 8px;
+   transform: translateY(-50%);
+   color: #A0A0A0;
+   font-size: 0.875rem; 
+   transition: 0.2s;
+}
+.form-input:focus ~ .form-label{
+	top: -10px;
+	font-size: 14px;
+	color: #000000;
+}
+.form-button {
+  width: max-content;
+  margin:1rem auto 0;
+  font-size: 14px;
+}
