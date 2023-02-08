@@ -1,6 +1,13 @@
 @import url(full.css);
 $fz-36:36px;
 $clr-sec:#F0EFEB;
+
+.title{
+   font-weight: 700;
+   font-size:  clamp(1.3rem, 6vw, 2.25rem);
+   line-height: 1.16;
+   color: #000;
+}
 /*-------------------------------------------------------------------------------------------------*/
 .deeper {
    padding: 1rem 0;
@@ -13,24 +20,208 @@ $clr-sec:#F0EFEB;
    
 }
 .deeper__body {
-   max-width: 605px;
+   max-width: 535px;
    & h1{
       font-weight: 700;
-      font-size: 3.75rem;
+      font-size: clamp(1.5rem,7vw,3.75rem);
+      margin-bottom: 42px;
    }
    & p{
       font-size: 1.5rem;
+      margin-bottom: 1rem;
    }  
+   
 }
-.button {
+.link {
+   display: inline-block;
+   padding: 8px 1.5rem;
+   background-color: #000;
+   color: #fff;
+   border-radius: 100px;
 }
 .deeper__image {
    position: relative;
-   left: 110px;
+   left: 10px;
  
    & img{
      
    }
 }
+@media (max-width: 767px){
+   .deeper__container{
+      flex-direction: column;
+   }
+   .deeper__body p{
+      font-size: 1rem;
+   }
+}
 
 
+/*-------------------------------------------------------------------------------------------------*/
+.guid {
+   text-align: center;
+   padding: 60px 10px 85px;
+
+   & .title {
+      margin-bottom: 1.75rem;
+   }
+   & p{
+      max-width: 39.375rem;
+      margin: 0 auto 2.8125rem;
+   }
+   & h5{
+
+   }
+}
+/*---------------------------------bestsellers----------------------------------------------------------------*/
+.bestsellers {
+   padding-bottom: 3.125rem;
+}
+.bestsellers__container {
+   display: flex;
+   justify-content: space-between;
+   row-gap: 2rem;
+   column-gap: 1rem;
+   flex-wrap: wrap;
+
+   @media (max-width: 1000px){
+   justify-content: center;
+   }
+}
+.bestsellers__item {
+   width: max-content;
+}
+.bestsellers__image {
+   width: 100%;
+   margin-bottom: 1.75rem;
+}
+.bestsellers__text {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   text-align: center;
+   font-size: 17px;
+
+   & h5{
+      max-width: 150px;
+      margin: auto;
+      font-weight: 700;
+   }
+}
+.bestsellers__link {
+   color: inherit;
+   font-weight: 700;
+   text-decoration: underline;
+}
+
+
+/*-------------------------------------------------------------------------------------------------*/
+.cards {
+   padding: 50px 0;
+}
+.cards__item {
+
+}
+.cards__item:nth-child(1),
+.cards__item:nth-child(3){
+   background: rgba(204, 204, 204, 0.3);
+}
+.cards__item:nth-child(2){
+   background-color: rgba(204, 204, 204, 0.6);
+   
+   & .item__container {
+      flex-direction: row-reverse;
+      text-align: end;
+   }
+}
+
+
+.item__container {
+ padding: 75px 10px 50px;
+   display: flex;
+   align-items: center;
+   gap: 50px;
+
+   & img{
+      max-width: 100%;
+   }
+}
+
+
+.cards__body {
+   max-width: 33.125rem;
+
+   & h3{
+      margin-bottom: 1.875rem;
+   }
+   & p{
+      font-size: clamp(1rem,4vw, 36px);
+      line-height: 1.16;
+      margin-bottom: 2.5rem;
+   }
+
+   & a{
+      color: inherit;
+      text-decoration: underline;
+      font-size: 1.0625rem;
+      font-weight: 700;
+   }
+}
+
+@media (max-width: 820px){
+   .item__container,
+   .cards__item:nth-child(2) .item__container{
+      flex-direction: column;
+      text-align: center;
+   }
+}
+/*-----------------------someof--------------------------------------------------------------------------*/
+.someof {
+   padding: 50px 0;
+}
+.someof__container {
+
+   & .title{
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 3.75rem;
+   }
+}
+
+.someof__body {
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+   column-gap: 1.5rem;
+   row-gap:  clamp(2rem,6vw,6.25rem);
+}
+.someof__item {
+   text-align: center;
+   & span{
+      display: block;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin:0 auto 1.625rem;
+      background-color: #21F7EC;
+   }
+
+   & p{
+      font-weight: 700;
+      font-size: 1.875rem;
+   }
+}
+.someof__item:nth-child(2) span{
+   background-color: #5cc420;
+}
+.someof__item:nth-child(3) span{
+   background-color: #e98008;
+}
+.someof__item:nth-child(4) span{
+   background-color: #cb16d1;
+}
+.someof__item:nth-child(5) span{
+   background-color: #4d18e0;
+}
+.someof__item:nth-child(6) span{
+   background-color: #ff0000;
+}

@@ -7,38 +7,66 @@ header .container {
 }
 .header__logo {
    position: absolute;
-   top: 50%;
+   top: 1rem;
    left: 50%;
-   transform: translate(-50%,-50%);
+   transform: translateX(-50%);
 }
-.header__list {
+.icon-menu {
+}
+.menu{
+   display: flex;
+   align-items: flex-end;
+   justify-content: flex-end;
+   flex-direction: column;
+}
+.menu__body {
+   display: flex;
+   align-items: center;
+}
+.menu__list {
    display: flex;
    gap: 1.75rem;
-
-   & li a {
+}
+.menu__item {
+   & a{
       color: inherit;
-      font-weight: 700;
    }
 }
 .header__logos {
    display: flex;
    align-items: center;
    gap: 1rem;
+
+   & li:first-of-type{
+      position: relative;
+      top: 2px;
+   }
 }
 
-
-@media (max-width: 1024px){
-   /* .header {
-      padding: 20px 0px 20px 0px;
-      position: fixed;
-   } */
+@media (max-width: 1000px){
+   header .container {
+      flex-direction: row-reverse;
+   }
+   .menu__list{
+      flex-direction: column;
+      text-align: end;
+      gap: 10px;
+   }
+}
+@media (max-width: 1000px){
+   header .container{
+      align-items: flex-start;
+   }
    .menu__icon{
       z-index: 5;
       display: block;
       position: relative;
+      top: 5px;
       width: 30px;
       height: 18px;
       cursor: pointer;
+      background-color: inherit;
+      
    }
    .menu__icon span,
    .menu__icon::before,
@@ -48,7 +76,7 @@ header .container {
        height: 10%;
        width: 100%;
        transition: all 0.3s ease 0s;
-       background-color: #fff;
+       background-color: #000000;
    }
    .menu__icon::before,
    .menu__icon::after{
@@ -64,39 +92,33 @@ header .container {
       top: 50%;
       transform: scale(1) translate(0px, -50%);
    }
-   .menu__icon._active span{
+   .menu__icon.active span{
       transform: scale(0) translate(0, -50%);
    }
-   .menu__icon._active::before{
+   .menu__icon.active::before{
       top: 50%;
       transform: rotate(-45deg) translate(0px, -50%);
    }
-   .menu__icon._active::after{
+   .menu__icon.active::after{
       bottom: 50%;
       transform: rotate(45deg) translate(0px, 50%);
    }
    .menu__body{
-      position: fixed;
-      bottom: -100%;
-      left: 0;
-      width: 100%;
+      position: relative;
+      height: 0;
+      transform: translateY(-100%);
+      opacity: 0;
+      overflow: hidden;
+     
+   }
+   .menu__body.active{
+      position: relative;
+      top: 1rem;
+      opacity: 1;
       height: 100%;
-      background-color: rgba(0, 4, 25, 0.9);
-      padding: 100px 30px 30px 30px;
-      transition: bottom 0.3s ease 0s;
-      overflow: auto;
+      overflow: visible;
+      transition: .5s;
+      transform: translateY(00%);
    }
-   .menu__body:before{
-      content: "";
-      position: fixed;
-      width: 100%;
-      top: 0;
-      left: 0;
-      height: 70px;
-      background-color: red;
-      z-index: 2;
-   }
-   .menu__body._active{
-      bottom: 0;
-   }
+   
 }
