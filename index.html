@@ -24,17 +24,22 @@
             </ul>
           </nav>
       </div>
-      <ul class="header__logos">
-         <li><a href="#">
-            <img src="image/logos/inst.svg" alt="inst">
-         </a></li>
-         <li><a href="">
-            <img src="image/logos/search.svg" alt="search">
-         </a></li>
-         <li id="basket">
-            <img src="image/logos/basket.svg" alt="basket">
-         </li>
-      </ul>
+      <div class="logo__links">
+         <ul class="header__logos">
+            <li><a href="#" target="_blank">
+               <img src="image/logos/inst.svg" alt="inst">
+            </a></li>
+            <li>
+               <button form="header__form" type="submit" class="header__search"></button>
+            </li>
+            <li id="basket">
+               <img src="image/logos/basket.svg" alt="basket">
+            </li>
+         </ul>
+         <!-- <form id="header__form" action="#" method="#" class="header__form">
+            <input type="text" name="search" id="search">
+         </form> -->
+      </div>
    </div>
 </header>   <main>
       <div class="wrapper">
@@ -58,7 +63,7 @@
          <section class="bestsellers">
             <div class="bestsellers__container container">
                <article class="bestsellers__item">
-                     <img src="image/bestsellers/01.png" alt="" class="bestsellers__image">       
+                     <img src="image/bestsellers/01.png" alt="bestsellers" class="bestsellers__image">       
                     <div class="bestsellers__text">
                         <h5>Thalby Guide to French Culture and Heritage</h5>
                            <p>USD 6.99</p>
@@ -66,7 +71,7 @@
                     </div>
                </article>
                <article class="bestsellers__item">
-                  <img src="image/bestsellers/02.png" alt="" class="bestsellers__image">       
+                  <img src="image/bestsellers/02.png" alt="bestsellers" class="bestsellers__image">       
                  <div class="bestsellers__text">
                      <h5>Thalby Guide to French Culture and Heritage</h5>
                         <p>USD 6.99</p>
@@ -74,7 +79,7 @@
                  </div>
             </article>
             <article class="bestsellers__item">
-               <img src="image/bestsellers/03.png" alt="" class="bestsellers__image">       
+               <img src="image/bestsellers/03.png" alt="bestsellers" class="bestsellers__image">       
               <div class="bestsellers__text">
                   <h5>Thalby Guide to French Culture and Heritage</h5>
                      <p>USD 6.99</p>
@@ -86,31 +91,31 @@
          <section class="cards">
                <div class="cards__item">
                   <div class="item__container container">
-                     <img src="image/bestsellers/02.png" alt="">
+                     <img src="image/bestsellers/02.png" alt="bestsellers">
                      <div class="cards__body">
                         <h3 class="title">People and Society</h3>
                         <p>Our guides to society deliver all the social insight you need, helping you understand how people live, love and play today and why communities are the way they are.</p>
-                        <a href="#">Shop Society Guides</a>
+                        <a href="#" target="_blank">Shop Society Guides</a>
                      </div>
                   </div>
                </div>
                <div class="cards__item">
                   <div class="item__container container">
-                     <img src="image/bestsellers/01.png" alt="">
+                     <img src="image/bestsellers/01.png" alt="bestsellers">
                      <div class="cards__body">
                         <h3 class="title">People and Society</h3>
                         <p>Our guides to society deliver all the social insight you need, helping you understand how people live, love and play today and why communities are the way they are.</p>
-                        <a href="#">Shop Society Guides</a>
+                        <a href="#" target="_blank">Shop Society Guides</a>
                      </div>
                   </div>
                </div>
                <div class="cards__item">
                   <div class="item__container container">
-                     <img src="image/bestsellers/03.png" alt="">
+                     <img src="image/bestsellers/03.png" alt="bestsellers">
                      <div class="cards__body">
                         <h3 class="title">People and Society</h3>
                         <p>Our guides to society deliver all the social insight you need, helping you understand how people live, love and play today and why communities are the way they are.</p>
-                        <a href="#">Shop Society Guides</a>
+                        <a href="#" target="_blank">Shop Society Guides</a>
                      </div>
                   </div>
                </div>
@@ -157,13 +162,13 @@
                      <a href="#">Discover</a>
                   </blockquote>
                   <blockquote class="blockquote">
-                     <img src="image/interviews/02.png" alt="01">
+                     <img src="image/interviews/02.png" alt="02">
                      <p class="blockquote__text">"I don’t like things to be conventional. If it’s too nice, I bring disorder."</p>
                      <p class="blockquote__name">Camille Muller, <br>Landscape Designer, France</p>
                      <a href="#">Discover</a>
                   </blockquote>
                   <blockquote class="blockquote">
-                     <img src="image/interviews/03.png" alt="01">
+                     <img src="image/interviews/03.png" alt="03">
                      <p class="blockquote__text">"I don’t like things to be conventional. If it’s too nice, I bring disorder."</p>
                      <p class="blockquote__name">Camille Muller, <br>Landscape Designer, France</p>
                      <a href="#">Discover</a>
@@ -179,16 +184,16 @@
                   <form action="#" method="#" class="keepin__info">
                      <div class="form__name">
                         <div class="form-group">
-                           <input class="form-input" type="text" id="first-input">
+                           <input class="form-input" type="text" id="first-input" placeholder=" ">
                            <label class="form-label" for="first-input">First Name</label>
                         </div>
                         <div class="form-group">
-                           <input class="form-input" type="text" id="last-input">
+                           <input class="form-input" type="text" id="last-input" placeholder=" ">
                            <label class="form-label" for="last-input">Last Name</label>
                         </div>
                      </div>
                      <div class="form-group">
-                        <input class="form-input" type="email" id="email">
+                        <input class="form-input" type="email" id="email" placeholder=" ">
                         <label class="form-label" for="email">Email</label>
                      </div>
                      <button type="submit" class="form-button link">Subscribe</button>
@@ -199,7 +204,39 @@
       </div>
    </main>
 <footer>
-  
+   <div class="footer__container container">
+      <p class="copy">Thalby LLC © 2021</p>
+      <div class="footer__left">
+         <a href="#">
+            <img src="image/logo-white.svg" alt="">
+         </a>
+         <ul class="links">
+            <li><a href="#" target="_blank">
+               <img src="image/logos/facebook.svg" alt="">
+            </a></li>
+            <li><a href="#" target="_blank">
+               <img src="image/logos/inst-white.svg" alt="">
+            </a></li>
+            <li><a href="#" target="_blank">
+               <img src="image/logos/twitter.svg" alt="">
+            </a></li>
+         </ul>
+      </div>
+      <div class="footer__right">
+         <ul class="right__list">
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Write for Us</a></li>
+         </ul>
+         <ul class="right__list">
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">Email hi@thalby.com</a></li>
+            <li><a href="#">Help</a></li>
+         </ul>
+      </div>
+   </div>
 </footer>   <script src="script/main.js"></script>
 </body>
 </html>

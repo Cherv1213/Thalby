@@ -44,7 +44,7 @@ $clr-sec:#F0EFEB;
    left: 10px;
  
    & img{
-     
+      width: 100%;
    }
 }
 @media (max-width: 767px){
@@ -315,24 +315,27 @@ $clr-sec:#F0EFEB;
    padding: 12px 8px;
    width: 100%;
    font-size: 1rem;
-   
+   background: transparent;
 }
 .form-label{
    position: absolute;
-   top: 50%;
-   left: 8px;
+   top:50%;
    transform: translateY(-50%);
+   left: 8px;
    color: #A0A0A0;
    font-size: 0.875rem; 
-   transition: 0.2s;
+   transition: 0.3s;
+   z-index: -1;
 }
-.form-input:focus ~ .form-label{
-	top: -10px;
-	font-size: 14px;
-	color: #000000;
-}
+
 .form-button {
   width: max-content;
   margin:1rem auto 0;
   font-size: 14px;
+}
+.form-input:focus ~ .form-label,
+.form-input:not(:placeholder-shown) ~ .form-label{
+   top: -10px;
+   font-size: 12px;
+   color: #000;
 }
