@@ -83,10 +83,6 @@ header .container {
   top: 2px;
 }
 
-#basket {
-  cursor: pointer;
-}
-
 .header__search {
   position: relative;
   top: 2px;
