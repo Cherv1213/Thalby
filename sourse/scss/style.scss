@@ -339,3 +339,53 @@ $clr-sec:#F0EFEB;
    font-size: 12px;
    color: #000;
 }
+
+
+
+.scroll-up {
+   position: fixed;
+   right: 3.125rem;
+   bottom: 3.125rem;
+   z-index: 1000;
+   width: 50px;
+   height: 50px;
+   color: #26ee0b;
+   cursor: pointer;
+   visibility: hidden;
+   border-radius: 50%;
+   box-shadow: inset 0 0 0 4px #dcdcdc;
+   opacity: 0;
+   transition: .2s;
+   transform: translateY(25px);
+
+   &:hover{
+      color: orange;
+   }
+   &::before{
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      font-size: 1.25rem;
+      content:'↑';
+   }
+}
+
+._active{
+   visibility: visible;
+   opacity: 1;
+   transform: translateY(0);
+}
+
+
+.scroll-up__svg-path {
+   box-sizing: border-box;
+   fill: none;
+   stroke: orange;
+   stroke-width: 4px;
+   transition: 0.2s;
+}

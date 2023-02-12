@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(full.css);
 .title {
   font-weight: 700;
@@ -407,4 +408,62 @@
   top: -10px;
   font-size: 12px;
   color: #000;
+}
+
+.scroll-up {
+  position: fixed;
+  right: 3.125rem;
+  bottom: 3.125rem;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  color: #26ee0b;
+  cursor: pointer;
+  visibility: hidden;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0 0 0 4px #dcdcdc;
+          box-shadow: inset 0 0 0 4px #dcdcdc;
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: translateY(25px);
+          transform: translateY(25px);
+}
+.scroll-up:hover {
+  color: orange;
+}
+.scroll-up::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1.25rem;
+  content: "↑";
+}
+
+._active {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.scroll-up__svg-path {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  fill: none;
+  stroke: orange;
+  stroke-width: 4px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
