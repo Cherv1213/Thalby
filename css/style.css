@@ -104,12 +104,6 @@
   }
 }
 
-.bestsellers__item {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
 .bestsellers__image {
   width: 100%;
   margin-bottom: 1.75rem;
