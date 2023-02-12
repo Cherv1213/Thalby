@@ -104,9 +104,14 @@
   }
 }
 
-.bestsellers__image {
-  width: 100%;
+.bestseller__image {
   margin-bottom: 1.75rem;
+  height: 430px;
+  width: 100%;
+}
+.bestseller__image img {
+  width: 100%;
+  height: 100%;
 }
 
 .bestsellers__text {
