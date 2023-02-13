@@ -83,24 +83,21 @@ $clr-sec:#F0EFEB;
    row-gap: 2rem;
    column-gap: 1rem;
    flex-wrap: wrap;
-
+     
    @media (max-width: 1000px){
    justify-content: center;
    }
 }
 .bestsellers__item {
-
+   max-width: 314px;
 }
-.bestseller__image {
-   margin-bottom: 1.75rem;
-   height: 430px;
-   width: 100%;
- 
-   & img{
+   
+   .bestseller__image{
       width: 100%;
-      height: 100%;
+      height: 430px;
+      margin-bottom: 1.75rem;
    }
-}
+
 .bestsellers__text {
    display: flex;
    flex-direction: column;
