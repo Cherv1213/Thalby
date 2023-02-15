@@ -64,3 +64,29 @@ scrollUp.addEventListener('click', () =>{
       behavior: 'smooth'
    });
 });
+
+
+
+$(document).ready(function(){
+   $('.owl-carousel').owlCarousel({
+       margin:70,
+       loop:true,
+        autoplay:true,
+        autoplayTimeout:1000,
+        autoplayHoverPause:false,
+        responsive:{
+           0:{
+               items:1,
+           },
+           600:{
+            margin:50,
+            items:2,
+           },
+           1000:{
+               items:3,
+           }
+       },
+       nav: false,
+       dots: true,
+   });
+});
