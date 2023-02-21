@@ -35,8 +35,7 @@ header .container {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
-.menu__body {
+.menu .menu__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,8 +50,7 @@ header .container {
   display: flex;
   gap: 1.75rem;
 }
-
-.menu__item a {
+.menu__list .menu__item a {
   color: inherit;
 }
 

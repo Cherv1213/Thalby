@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(full.css);
+@import "full.css";
 .title {
   font-weight: 700;
   font-size: clamp(1.3rem, 6vw, 2.25rem);
@@ -120,7 +120,7 @@
   max-width: 19.6875rem;
 }
 
-.owl-dots {
+.owl-item._active .owl-dots {
   position: relative;
   top: 30px;
 }

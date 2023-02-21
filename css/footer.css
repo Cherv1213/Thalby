@@ -2,8 +2,7 @@ footer {
   padding: 80px 0 4rem;
   background-color: #000;
 }
-
-.footer__container {
+footer .footer__container {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14,7 +13,7 @@ footer {
   color: white;
 }
 @media (max-width: 540px) {
-  .footer__container {
+  footer .footer__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

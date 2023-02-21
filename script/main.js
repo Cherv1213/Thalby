@@ -71,7 +71,7 @@ $(document).ready(function(){
    $('.owl-carousel').owlCarousel({
        margin:70,
        loop:true,
-        autoplay:true,
+        autoplay:false,
         autoplayTimeout:1000,
         autoplayHoverPause:false,
         responsive:{
@@ -79,7 +79,6 @@ $(document).ready(function(){
                items:1,
            },
            600:{
-            margin:50,
             items:2,
            },
            1000:{
