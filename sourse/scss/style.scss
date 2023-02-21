@@ -1,12 +1,12 @@
 @import "full.css";
 $fz-36:36px;
 $clr-sec:#F0EFEB;
-
+$clr-black:#000;
 .title{
    font-weight: 700;
    font-size:  clamp(1.3rem, 6vw, 2.25rem);
    line-height: 1.16;
-   color: #000;
+   color: $clr-black;
 }
 /*-------------------------------------------------------------------------------------------------*/
 .deeper {
@@ -35,7 +35,7 @@ $clr-sec:#F0EFEB;
 .link {
    display: inline-block;
    padding: 8px 1.5rem;
-   background-color: #000;
+   background-color: $clr-black;
    color: #fff;
    border-radius: 100px;
 }
@@ -330,7 +330,7 @@ $clr-sec:#F0EFEB;
 }
 .form-group {
    position: relative;
-   border: 1px solid #000;
+   border: 1px solid $clr-black;
 }
 .form-input{
    padding: 12px 8px;
@@ -358,7 +358,7 @@ $clr-sec:#F0EFEB;
 .form-input:not(:placeholder-shown) ~ .form-label{
    top: -10px;
    font-size: 12px;
-   color: #000;
+   color: $clr-black;
 }
 
 
